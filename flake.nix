@@ -12,7 +12,7 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
-        ./mc-server-setup.nix
+        ./mc-server-setup
       ];
     };
   };

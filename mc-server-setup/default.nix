@@ -24,7 +24,12 @@
           view-distance=20;
         };
         whitelist = import ../not_public/mc-server-setup/whitelist.nix;
-        ops = import ../not_public/mc-server-setup/ops.nix
+        ops = import ../not_public/mc-server-setup/ops.nix;
+        symLinks = {
+          mods = pkgs.linkFarmFromDrvs "mods" {
+            
+          }
+        }
       };
     };
   };
