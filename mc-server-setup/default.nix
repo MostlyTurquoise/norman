@@ -23,9 +23,8 @@
           enforce-whitelist=true;
           view-distance=20;
         };
-        whitelist = {
-          MostlyTurquoise = "665e2c56-0339-4990-9c78-400692a7ba84";
-        };
+        whitelist = import ../not_public/mc-server-setup/whitelist.nix;
+        ops = import ../not_public/mc-server-setup/ops.nix
       };
     };
   };
