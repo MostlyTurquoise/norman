@@ -1,3 +1,3 @@
 hardware-configuration.nix
 flake.lock
-not_public/*
+not_public/

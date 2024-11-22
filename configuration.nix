@@ -112,3 +112,4 @@
     authKeyFile = "/etc/nixos/tailscalepreauthkey";
   };
 }
+
