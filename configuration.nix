@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./clicks.codes.tailscale.nix
+      ./clicks-codes-tailscale.nix
     ];
 
   # Bootloader.
@@ -106,6 +106,7 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
+  
   clicks.networking.tailscale = {
     enable = true;
     authKeyFile = "/etc/nixos/tailscalepreauthkey";
