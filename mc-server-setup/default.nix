@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, fetchurl ... }:
+{ inputs, pkgs, lib, fetchurl, ... }:
 {
   imports = [ inputs.nix-minecraft.nixosModules.minecraft-servers ];
   nixpkgs.overlays = [ inputs.nix-minecraft.overlay ];
