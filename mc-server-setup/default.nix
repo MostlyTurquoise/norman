@@ -28,8 +28,8 @@
         symLinks = {
           mods = pkgs.linkFarmFromDrvs "mods" {
             
-          }
-        }
+          };
+        };
       };
     };
   };
