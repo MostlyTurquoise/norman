@@ -23,6 +23,9 @@
           enforce-whitelist=true;
           view-distance=20;
         };
+        whitelist = {
+          MostlyTurquoise = "665e2c56-0339-4990-9c78-400692a7ba84";
+        };
         symlinks = {
           mods = pkgs.linkFarmFromDrvs "mods" (import ./mods.nix);
         };
