@@ -24,7 +24,7 @@
           view-distance=20;
         };
         symlinks = {
-          mods = pkgs.linkFarmFromDrvs "mods" (builtins.trace (import ./mods.nix) [ (builtins.fetchurl { url = "https://cdn.modrinth.com/data/P7dR8mSH/versions/Zp9iAZdZ/fabric-api-0.110.0%2B1.21.1.jar"; sha256 = "145msngqayqw3n0i5fl6lwqdbh91qakllcx43bvp879b3a5hi408"; name = "fabric-api-0.110.02B1.21.1.jar"; }) ]);
+          mods = pkgs.linkFarmFromDrvs "mods" (import ./mods.nix);
         };
       };
     };
