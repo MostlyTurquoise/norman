@@ -8,11 +8,9 @@
     package = pkgs.jdk22_headless;
   }; 
 
- services.minecraft-servers = {
+  services.minecraft-servers = {
     enable = true;
     eula = true;
-
-    user = "server";
 
     servers = {
       cartandflynns = {
