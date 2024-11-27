@@ -60,7 +60,7 @@
     packages = with pkgs; [];
     openssh.authorizedKeys.keyFiles = [
       /home/server/authorised_keys
-    ]
+    ];
   };
 
   # Enable automatic login for the user.
