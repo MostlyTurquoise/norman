@@ -28,8 +28,8 @@
                 name: value: derivation {
                   name = "${name}";
                   system = "x86_64-linux";
-                  builder = "${pkgs.coreutils}/bin/cp";
-                  args = ["${(builtins.trace "copying from ${value}" value)}" "$out/${name}.jar"];
+                  builder = "${pkgs.bash}/bin/bash";
+                  args = ["-c" "${pkgs.coreutils}/bin/cp" "${(builtins.trace "copying from ${value}" value)}" "$out/${name}.jar"];
                 }
               ) 
               (import ./mods.nix)
