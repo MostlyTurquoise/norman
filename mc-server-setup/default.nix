@@ -28,7 +28,7 @@
                 name: value: derivation {
                   name = "${name}";
                   system = "x86_64-linux";
-                  builder = "/bin/bash";
+                  builder = "/bin/sh";
                   args = ["-c" "cp" "-r" value "$out"];
                 }
               ) 
