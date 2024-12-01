@@ -5,8 +5,8 @@
     DeathBackup = builtins.fetchurl { url = "https://cdn.modrinth.com/data/Ot5JFxuv/versions/Zq5GkqAd/deathbackup-1.21.1-3.4.jar"; sha256 = "0ca6f5fxh9g5gbpd0iybzbgx5ihjc0cizhs05mqfxzbmzqxz6cbh"; };
     ItemRenameOLD = builtins.fetchurl { url = "https://cdn.modrinth.com/data/i5cjb3PQ/versions/qJaQ6MwF/itemrename-1.0.3%2B1.21.jar"; sha256 = "0si51h2h7spmnzi0x18f188qvhx73c6kbzr2iclrmyflpx0kqf85"; name="itemrename-1.0.32B1.21.jar";};
     Lithium = builtins.fetchurl { url = "https://cdn.modrinth.com/data/gvQqBUqZ/versions/frXUdgvL/lithium-fabric-0.14.2-snapshot%2Bmc1.21.1-build.90.jar"; sha256 = "115a6dham2bnwwqsljp68za3vwb9r9zql7dbdk5d0xdgsq6vzb2f"; name = "lithium-fabric-0.14.2-snapshot2Bmc1.21.1-build.90.jar"; };
+    SimpleVoiceChat = builtins.fetchurl { url = "https://cdn.modrinth.com/data/9eGKb6K1/versions/Fku4RjPN/voicechat-fabric-1.21.1-2.5.26.jar"; sha256 = "0zzwdsx5763aazm3j0qzaz4m58cxcinw3kzmhwjr62r17kcg82vl"; };
     Spark = builtins.fetchurl { url = "https://cdn.modrinth.com/data/l6YH9Als/versions/cALUj9l1/spark-1.10.109-fabric.jar"; sha256 = ""; };
-    SimpleVoiceChat = builtins.fetchurl { url = "https://cdn.modrinth.com/data/9eGKb6K1/versions/Fku4RjPN/voicechat-fabric-1.21.1-2.5.26.jar"; sha256 = ""; };
     Xaero'sMiniMap = builtins.fetchurl { url = "https://cdn.modrinth.com/data/1bokaNcj/versions/C6gFqr7V/Xaeros_Minimap_24.6.1_Fabric_1.21.jar"; sha256 = ""; };
     Xaero'sWorldMap = builtins.fetchurl { url = "https://cdn.modrinth.com/data/NcUtCpym/versions/373K4YJh/XaerosWorldMap_1.39.0_Fabric_1.21.jar"; sha256 = ""; };
 }
