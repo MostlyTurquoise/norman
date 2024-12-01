@@ -28,7 +28,7 @@
                 name: value: derivation {
                   name = "${name}";
                   system = builtins.currentSystem;
-                  builder = "${pkgs.system-path}/bin/cp";
+                  builder = "${pkgs.cp}/bin/cp";
                   args = ["-r" value "$out"];
                 }
               ) 
