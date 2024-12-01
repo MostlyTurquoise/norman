@@ -27,7 +27,7 @@
               builtins.mapAttrs (
                 name: value: derivation {
                   name = "${name}";
-                  system = builtins.currentSystem;
+                  system = "x86_64-linux";
                   builder = "/bin/bash";
                   args = ["-c" "cp" "-r" value "$out"];
                 }
