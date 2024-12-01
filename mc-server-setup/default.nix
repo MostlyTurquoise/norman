@@ -28,8 +28,8 @@
                 name: value: derivation {
                   name = "${name}";
                   system = builtins.currentSystem;
-                  builder = "${pkgs.cp}/bin/cp";
-                  args = ["-r" value "$out"];
+                  builder = "/bin/bash";
+                  args = ["-c" "cp" "-r" value "$out"];
                 }
               ) 
               (import ./mods.nix)
