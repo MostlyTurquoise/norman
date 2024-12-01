@@ -29,7 +29,7 @@
                   name = "${name}";
                   system = "x86_64-linux";
                   builder = "${pkgs.bash}/bin/bash";
-                  args = ["-c" "${pkgs.coreutils}/bin/cp" "${(builtins.trace "copying from ${value}" value)}" "$out/${name}.jar"];
+                  args = ["-c" "${pkgs.coreutils}/bin/cp ${(builtins.trace "copying from ${value}" value)} $out/${name}.jar"];
                 }
               ) 
               (import ./mods.nix)
