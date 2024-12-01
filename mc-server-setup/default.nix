@@ -22,7 +22,19 @@
           view-distance=20;
         };
         symlinks = {
-          mods = pkgs.linkFarmFromDrvs "mods" (import ./mods.nix);
+          mods = pkgs.linkFarmFromDrvs "mods" (
+            builtins.attrValues (
+              builtins.mapAttrs (
+                name: value: derivation {
+                  name = "${name}";
+                  system = builtins.currentSystem;
+                  builder = "${pkgs.system-path}/bin/cp";
+                  args = ["-r" value "$out"];
+                }
+              ) 
+              (import ./mods.nix)
+            )
+          );
         };
       };
     };

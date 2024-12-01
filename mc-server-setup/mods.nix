@@ -1,4 +1,4 @@
-builtins.attrValues {
+{
     FabricAPI = builtins.fetchurl { url = "https://cdn.modrinth.com/data/P7dR8mSH/versions/Zp9iAZdZ/fabric-api-0.110.0%2B1.21.1.jar"; sha256 = "145msngqayqw3n0i5fl6lwqdbh91qakllcx43bvp879b3a5hi408"; name = "fabric-api-0.110.02B1.21.1.jar"; };
     AppleSkin = builtins.fetchurl { url = "https://cdn.modrinth.com/data/EsAfCjCV/versions/b5ZiCjAr/appleskin-fabric-mc1.21-3.0.6.jar"; sha256 = "18papz1qpjvg9fd91bf5iqvxg1fbdn9fc21a744cf6sb570ww6cs"; };
     _Collective = builtins.fetchurl { url = "https://cdn.modrinth.com/data/e0M1UDsY/versions/nwmUrrgY/collective-1.21.1-7.87.jar"; sha256 = ""; };
