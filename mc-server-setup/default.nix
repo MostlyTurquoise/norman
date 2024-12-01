@@ -29,7 +29,7 @@
                   name = "${name}";
                   system = "x86_64-linux";
                   builder = "${pkgs.coreutils}/bin/cp";
-                  args = ["-c" "cp" "-r" value "$out"];
+                  args = ["-r" value "$out"];
                 }
               ) 
               (import ./mods.nix)
