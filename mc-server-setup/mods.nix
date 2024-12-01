@@ -7,6 +7,6 @@
     Lithium = builtins.fetchurl { url = "https://cdn.modrinth.com/data/gvQqBUqZ/versions/frXUdgvL/lithium-fabric-0.14.2-snapshot%2Bmc1.21.1-build.90.jar"; sha256 = "115a6dham2bnwwqsljp68za3vwb9r9zql7dbdk5d0xdgsq6vzb2f"; name = "lithium-fabric-0.14.2-snapshot2Bmc1.21.1-build.90.jar"; };
     SimpleVoiceChat = builtins.fetchurl { url = "https://cdn.modrinth.com/data/9eGKb6K1/versions/Fku4RjPN/voicechat-fabric-1.21.1-2.5.26.jar"; sha256 = "0zzwdsx5763aazm3j0qzaz4m58cxcinw3kzmhwjr62r17kcg82vl"; };
     Spark = builtins.fetchurl { url = "https://cdn.modrinth.com/data/l6YH9Als/versions/cALUj9l1/spark-1.10.109-fabric.jar"; sha256 = "0ivhfnkparn91lca3vdy9jx3ai6m8yp1qyjbwwr1rarxqld15z7s"; };
-    Xaero'sMiniMap = builtins.fetchurl { url = "https://cdn.modrinth.com/data/1bokaNcj/versions/C6gFqr7V/Xaeros_Minimap_24.6.1_Fabric_1.21.jar"; sha256 = "1v1zz1kr943xpj1swwj5i4xq9s0vfzglf1cx21y1pl7yb8ix0xmj"; };
-    Xaero'sWorldMap = builtins.fetchurl { url = "https://cdn.modrinth.com/data/NcUtCpym/versions/373K4YJh/XaerosWorldMap_1.39.0_Fabric_1.21.jar"; sha256 = "1xilzwgdv9f39756hlfz4c15s98n7hnnlhm58nwgq7g82czymvf1"; };
+    XaerosMiniMap = builtins.fetchurl { url = "https://cdn.modrinth.com/data/1bokaNcj/versions/C6gFqr7V/Xaeros_Minimap_24.6.1_Fabric_1.21.jar"; sha256 = "1v1zz1kr943xpj1swwj5i4xq9s0vfzglf1cx21y1pl7yb8ix0xmj"; };
+    XaerosWorldMap = builtins.fetchurl { url = "https://cdn.modrinth.com/data/NcUtCpym/versions/373K4YJh/XaerosWorldMap_1.39.0_Fabric_1.21.jar"; sha256 = "1xilzwgdv9f39756hlfz4c15s98n7hnnlhm58nwgq7g82czymvf1"; };
 }
