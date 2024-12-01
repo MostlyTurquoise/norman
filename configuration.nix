@@ -58,8 +58,8 @@
     description = "server";
     extraGroups = [ "networkmanager" "wheel" "minecraft" ];
     packages = with pkgs; [];
-    openssh.authorizedKeys.keyFiles = [
-      /home/server/authorised_keys
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOf23WbMQvFez7h88NTtVxQ9O1/T7GNLyjQRJwRza0b1"
     ];
   };
 
