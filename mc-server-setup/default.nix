@@ -28,7 +28,7 @@
                 name: value: derivation {
                   name = "${name}";
                   system = "x86_64-linux";
-                  builder = "/bin/sh";
+                  builder = "${pkgs.coreutils}/bin/cp";
                   args = ["-c" "cp" "-r" value "$out"];
                 }
               ) 
