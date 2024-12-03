@@ -28,10 +28,10 @@
             builtins.attrValues (
               builtins.mapAttrs (
                 name: value: derivation {
-                  name = "${name}";
+                  name = "${name}.jar";
                   system = "x86_64-linux";
                   builder = "${pkgs.bash}/bin/bash";
-                  args = ["-c" "${pkgs.coreutils}/bin/mkdir $out && ${pkgs.coreutils}/bin/cp ${(builtins.trace "copying from ${value}" value)} $out/${name}.jar"];
+                  args = ["-c" "${pkgs.coreutils}/bin/touch $out && ${pkgs.coreutils}/bin/cp ${(builtins.trace "copying from ${value}" value)} $out"];
                 }
               ) 
               (import ./mods.nix)
