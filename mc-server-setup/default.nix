@@ -13,13 +13,14 @@
     eula = true;
 
     user = "server";
+    operFirewall = true;
 
     servers = {
       cartandflynns = {
         enable = true;
         package = pkgs.fabricServers.fabric-1_21_1;
-        jvmOpts = "-Xms2144M -Xmx4192M";
-        serverProperties = (import ./server.properties.nix);
+        jvmOpts = "-Xms4144M -Xmx6192M";
+        serverProperties = (import ./cartandflynns/server.properties.nix);
         symlinks = {
           mods = pkgs.linkFarmFromDrvs "mods" (
             builtins.attrValues (
@@ -31,7 +32,28 @@
                   args = ["-c" "${pkgs.coreutils}/bin/touch $out && ${pkgs.coreutils}/bin/cp ${(builtins.trace "copying from ${value}" value)} $out"];
                 }
               ) 
-              (import ./mods.nix)
+              (import ./cartandflynns/mods.nix)
+            )
+          );
+        };
+      };
+      puttheleeinholly = {
+        enable = true;
+        package = pkgs.fabricServers.fabric-1_21_6;
+        jvmOpts = "-Xms4144M -Xmx6192M";
+        serverProperties = (import ./puttheleeinholly/server.properties.nix);
+        symlinks = {
+          mods = pkgs.linkFarmFromDrvs "mods" (
+            builtins.attrValues (
+              builtins.mapAttrs (
+                name: value: derivation {
+                  name = "${name}.jar";
+                  system = "x86_64-linux";
+                  builder = "${pkgs.bash}/bin/bash";
+                  args = ["-c" "${pkgs.coreutils}/bin/touch $out && ${pkgs.coreutils}/bin/cp ${(builtins.trace "copying from ${value}" value)} $out"];
+                }
+              ) 
+              (import ./puttheleeinholly/mods.nix)
             )
           );
         };

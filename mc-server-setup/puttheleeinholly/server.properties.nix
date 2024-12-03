@@ -1,0 +1,25 @@
+{
+    max-players=20;
+    gamemode="survival";
+    difficulty="easy";
+    white-list=true;
+    enforce-whitelist=true;
+    online-mode=true;
+    pvp=true;
+    enable-command-blocks=true;
+    allow-flight=true;
+    spawn-animals=true;
+    spawn-monsters=true;
+    spawn-npcs=true;
+    allow-nether=true;
+    force-gamemode=false;
+    broadcast-console-to-ops=true;
+    spawn-protection=0;
+    view-distance=20;
+    simulation-distance=4;
+    level-name="world";
+    op-permission-level=4;
+    max-chained-neighbor-updates=1000000;
+    max-world-size=29999984;
+    server-port=25566
+}
