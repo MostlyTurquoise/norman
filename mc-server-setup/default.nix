@@ -18,11 +18,7 @@
       cartandflynns = {
         enable = true;
         package = pkgs.fabricServers.fabric-1_21_1;
-        serverProperties = {
-          white-list=true;
-          enforce-whitelist=true;
-          view-distance=20;
-        };
+        serverProperties = (import ./server.properties.nix);
         symlinks = {
           mods = pkgs.linkFarmFromDrvs "mods" (
             builtins.attrValues (
