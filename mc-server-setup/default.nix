@@ -12,6 +12,8 @@
     enable = true;
     eula = true;
 
+    user = "server";
+
     servers = {
       cartandflynns = {
         enable = true;
