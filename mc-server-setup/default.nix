@@ -18,6 +18,7 @@
       cartandflynns = {
         enable = true;
         package = pkgs.fabricServers.fabric-1_21_1;
+        jvmOpts = "-Xms2144M -Xmx4192M";
         serverProperties = (import ./server.properties.nix);
         symlinks = {
           mods = pkgs.linkFarmFromDrvs "mods" (
