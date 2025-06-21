@@ -13,7 +13,7 @@
     eula = true;
 
     user = "server";
-    operFirewall = true;
+    openFirewall = true;
 
     servers = {
       cartandflynns = {

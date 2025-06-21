@@ -21,5 +21,5 @@
     op-permission-level=4;
     max-chained-neighbor-updates=1000000;
     max-world-size=29999984;
-    server-port=25566
+    server-port=25566;
 }
